@@ -1,0 +1,8 @@
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 1 - dll test\Lecture 1 - dll test\bin\Debug\netcoreapp3.1\Lecture 1 - dll test.deps.json
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 1 - dll test\Lecture 1 - dll test\bin\Debug\netcoreapp3.1\Lecture 1 - dll test.dll
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 1 - dll test\Lecture 1 - dll test\bin\Debug\netcoreapp3.1\Lecture 1 - dll test.pdb
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 1 - dll test\Lecture 1 - dll test\obj\Debug\netcoreapp3.1\Lecture 1 - dll test.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 1 - dll test\Lecture 1 - dll test\obj\Debug\netcoreapp3.1\Lecture 1 - dll test.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 1 - dll test\Lecture 1 - dll test\obj\Debug\netcoreapp3.1\Lecture 1 - dll test.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 1 - dll test\Lecture 1 - dll test\obj\Debug\netcoreapp3.1\Lecture 1 - dll test.dll
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 1 - dll test\Lecture 1 - dll test\obj\Debug\netcoreapp3.1\Lecture 1 - dll test.pdb
