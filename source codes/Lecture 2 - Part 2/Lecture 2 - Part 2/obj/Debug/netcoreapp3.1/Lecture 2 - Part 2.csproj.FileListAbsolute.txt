@@ -1,0 +1,13 @@
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 2 - Part 2\Lecture 2 - Part 2\bin\Debug\netcoreapp3.1\Lecture 2 - Part 2.exe
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 2 - Part 2\Lecture 2 - Part 2\bin\Debug\netcoreapp3.1\Lecture 2 - Part 2.deps.json
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 2 - Part 2\Lecture 2 - Part 2\bin\Debug\netcoreapp3.1\Lecture 2 - Part 2.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 2 - Part 2\Lecture 2 - Part 2\bin\Debug\netcoreapp3.1\Lecture 2 - Part 2.runtimeconfig.dev.json
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 2 - Part 2\Lecture 2 - Part 2\bin\Debug\netcoreapp3.1\Lecture 2 - Part 2.dll
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 2 - Part 2\Lecture 2 - Part 2\bin\Debug\netcoreapp3.1\Lecture 2 - Part 2.pdb
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 2 - Part 2\Lecture 2 - Part 2\obj\Debug\netcoreapp3.1\Lecture 2 - Part 2.csprojAssemblyReference.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 2 - Part 2\Lecture 2 - Part 2\obj\Debug\netcoreapp3.1\Lecture 2 - Part 2.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 2 - Part 2\Lecture 2 - Part 2\obj\Debug\netcoreapp3.1\Lecture 2 - Part 2.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 2 - Part 2\Lecture 2 - Part 2\obj\Debug\netcoreapp3.1\Lecture 2 - Part 2.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 2 - Part 2\Lecture 2 - Part 2\obj\Debug\netcoreapp3.1\Lecture 2 - Part 2.dll
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 2 - Part 2\Lecture 2 - Part 2\obj\Debug\netcoreapp3.1\Lecture 2 - Part 2.pdb
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 2 - Part 2\Lecture 2 - Part 2\obj\Debug\netcoreapp3.1\Lecture 2 - Part 2.genruntimeconfig.cache
