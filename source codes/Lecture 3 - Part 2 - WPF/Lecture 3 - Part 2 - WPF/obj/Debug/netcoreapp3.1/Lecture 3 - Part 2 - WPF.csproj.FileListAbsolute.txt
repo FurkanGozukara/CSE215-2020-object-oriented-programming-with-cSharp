@@ -1,0 +1,21 @@
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\bin\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF.exe
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\bin\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF.deps.json
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\bin\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\bin\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF.runtimeconfig.dev.json
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\bin\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF.dll
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\bin\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF.pdb
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF.csprojAssemblyReference.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF_MarkupCompile.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF_MarkupCompile.lref
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF.g.resources
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF.dll
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF.pdb
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\Lecture 3 - Part 2 - WPF.genruntimeconfig.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\SecondWindow.g.cs
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\Lecture 3 - Part 2 - WPF\Lecture 3 - Part 2 - WPF\obj\Debug\netcoreapp3.1\SecondWindow.baml

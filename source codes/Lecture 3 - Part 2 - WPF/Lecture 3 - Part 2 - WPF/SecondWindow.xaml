@@ -1,0 +1,20 @@
+﻿<Window x:Class="Lecture_3___Part_2___WPF.SecondWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lecture_3___Part_2___WPF"
+        mc:Ignorable="d"
+        Title="SecondWindow" Height="450" Width="800">
+    <Grid>
+        <Button Name="btnGenerateNumbers" Content="generate numbers and add to dictionary" HorizontalAlignment="Left" Margin="27,26,0,0" VerticalAlignment="Top" Width="258" Height="58" Click="btnGenerateNumbers_Click"/>
+        <ListBox Name="lstBoxStatiscs" Height="200" Margin="27,101,103,133"/>
+        <ComboBox Name="cmSortOrder" HorizontalAlignment="Left" Margin="313,26,0,0" VerticalAlignment="Top" Width="254">
+        </ComboBox>
+        <Button x:Name="btnSortdictionary" Content="sort dictionary" HorizontalAlignment="Left" Margin="596,25,0,0" VerticalAlignment="Top" Width="101" Click="btnSortdictionary_Click"/>
+        <Button x:Name="btnWriteDicToFile" Content="write dic to file" HorizontalAlignment="Left" Margin="596,63,0,0" VerticalAlignment="Top" Width="101" Click="btnWriteDicToFile_Click"/>
+        <ComboBox x:Name="cmb_WritingMethod" HorizontalAlignment="Left" Margin="313,63,0,0" VerticalAlignment="Top" Width="254">
+        </ComboBox>
+
+    </Grid>
+</Window>
