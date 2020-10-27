@@ -14,6 +14,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Lecture_3___Part_2___WPF
 {
@@ -43,9 +45,27 @@ namespace Lecture_3___Part_2___WPF
 
         private void btnGenerateNumbers_Click(object sender, RoutedEventArgs e)
         {
+            var vrId = Thread.CurrentThread.ManagedThreadId;
+            Debug.WriteLine("CurrentThread id when generate button clicked = "+ vrId);
+            Task.Factory.StartNew(() => {
+                //whatever run here will be executed on the thread pool
+                //therefore, whatever executed here will not block the main thread nor the UI (user interface)
+                vrId = Thread.CurrentThread.ManagedThreadId;
+                Debug.WriteLine("CurrentThread id in task factory = " + vrId);
+                generateRandomNumbersMethod();
+
+            });
+           
+        }
+
+        private void generateRandomNumbersMethod()
+        {
+            var vrId = Thread.CurrentThread.ManagedThreadId;
+            Debug.WriteLine("CurrentThread id inside generate random numbers method = " + vrId);
+
             Random randobj = new Random();
 
-            for (int i = 0; i < 100000; i++)
+            for (int i = 0; i < 10000000; i++)
             {
                 int irRand1 = randobj.Next();
                 int irRand2 = randobj.Next();
@@ -67,15 +87,40 @@ namespace Lecture_3___Part_2___WPF
 
         void updateStatistics()
         {
-            lstBoxStatiscs.Items.Clear();
-            lstBoxStatiscs.Items.Add($"number of elements in the dictionary: {dicHoldNumbers.Count.ToString("N0")}");
-            lstBoxStatiscs.Items.Add($"first key in the dictionary: {dicHoldNumbers.Keys.FirstOrDefault().ToString("N0")}");
-            lstBoxStatiscs.Items.Add($"last key in the dictionary: {dicHoldNumbers.Keys.LastOrDefault().ToString("N0")}");
-            lstBoxStatiscs.Items.Add($"biggest key in the dictionary: {dicHoldNumbers.Keys.OrderByDescending(pr => pr).FirstOrDefault().ToString("N0")}");
-            lstBoxStatiscs.Items.Add($"smallest key in the dictionary: {dicHoldNumbers.Keys.OrderBy(pr => pr).FirstOrDefault().ToString("N0")}");
-            lstBoxStatiscs.Items.Add($"biggest value in the dictionary: {dicHoldNumbers.Select(pr => pr.Value).OrderByDescending(pr => pr).FirstOrDefault().ToString("N0")}");
-            lstBoxStatiscs.Items.Add($"smallest value in the dictionary: {dicHoldNumbers.Select(pr => pr.Value).OrderBy(pr => pr).FirstOrDefault().ToString("N0")}");
-            lstBoxStatiscs.Items.Add($"sum of the values in the dictionary: {dicHoldNumbers.Select(pr => pr.Value).Sum().ToString("N0")}");
+            var vrId = Thread.CurrentThread.ManagedThreadId;
+            Debug.WriteLine("CurrentThread id when update statistics method called = " + vrId);
+           var vrStatistics= calculateStatistics();
+            Dispatcher.BeginInvoke(new Action(delegate()
+            {
+                vrId = Thread.CurrentThread.ManagedThreadId;
+                Debug.WriteLine("thread id inside dispatcher = " + vrId);
+                lstBoxStatiscs.Items.Clear();
+
+                foreach (var vrPerStatistic in vrStatistics)
+                {
+                    lstBoxStatiscs.Items.Add(vrPerStatistic);
+                }
+            }));
+
+         
+        }
+
+        private List<string> calculateStatistics()
+        {
+            List<string> lstStatistics = new List<string>();
+
+            //these below are cpu intensive task and we took them to a sub task inside a different thread rather than the main thread
+            //therefore no more user interface freeze / unresponsiveness
+            lstStatistics.Add($"number of elements in the dictionary: {dicHoldNumbers.Count.ToString("N0")}");
+            lstStatistics.Add($"first key in the dictionary: {dicHoldNumbers.Keys.FirstOrDefault().ToString("N0")}");
+            lstStatistics.Add($"last key in the dictionary: {dicHoldNumbers.Keys.LastOrDefault().ToString("N0")}");
+            lstStatistics.Add($"biggest key in the dictionary: {dicHoldNumbers.Keys.OrderByDescending(pr => pr).FirstOrDefault().ToString("N0")}");
+            lstStatistics.Add($"smallest key in the dictionary: {dicHoldNumbers.Keys.OrderBy(pr => pr).FirstOrDefault().ToString("N0")}");
+            lstStatistics.Add($"biggest value in the dictionary: {dicHoldNumbers.Select(pr => pr.Value).OrderByDescending(pr => pr).FirstOrDefault().ToString("N0")}");
+            lstStatistics.Add($"smallest value in the dictionary: {dicHoldNumbers.Select(pr => pr.Value).OrderBy(pr => pr).FirstOrDefault().ToString("N0")}");
+            lstStatistics.Add($"sum of the values in the dictionary: {dicHoldNumbers.Select(pr => pr.Value).Sum().ToString("N0")}");
+
+            return lstStatistics;
         }
 
 
@@ -114,20 +159,28 @@ namespace Lecture_3___Part_2___WPF
                     MessageBox.Show("no writing method is selected");
                     break;
                 case 1:
-                    writeFileWithAllLines();
+                    Task.Factory.StartNew(() => { writeFileWithAllLines(); })
+                        .ContinueWith(completed => executeFinalTask());
+            
                     break;
                 case 2:
-                    writeFileWithStreamWriter_no_auto_flush();
-                    writeFileWithStreamWriter_auto_flush();
+                    Task.Factory.StartNew(() => { writeFileWithStreamWriter_no_auto_flush(); }).ContinueWith(completed => executeFinalTask()); 
+                    Task.Factory.StartNew(() => { writeFileWithStreamWriter_auto_flush(); }).ContinueWith(completed => executeFinalTask());                 
                     break;
                 case 3:
-                    writeStringBuilder();
+                    Task.Factory.StartNew(() => { writeStringBuilder(); }).ContinueWith(completed => executeFinalTask()); 
+                
                     break;
                 case 4:
 
                     break;
             }
 
+       
+        }
+
+        private void executeFinalTask()
+        {
             var vrExePath = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             Process.Start("explorer.exe", vrExePath);
             GC.Collect();
@@ -141,7 +194,15 @@ namespace Lecture_3___Part_2___WPF
             swTimer.Start();
             File.WriteAllLines(srNameofFile, dicHoldNumbers.Select(pr => (pr.Key + "\t" + pr.Value).ToString()).ToList());
             swTimer.Stop();
-            lstBoxStatiscs.Items.Insert(0, "writeFileWithAllLines took : " + swTimer.ElapsedMilliseconds.ToString("N0") + " ms");
+
+            updateListBox("writeFileWithAllLines took : " + swTimer.ElapsedMilliseconds.ToString("N0") + " ms",0);
+        }
+
+        private void updateListBox(string srMessage, int irIndex)
+        {
+            Dispatcher.BeginInvoke( new Action(delegate ()  {
+                lstBoxStatiscs.Items.Insert(irIndex, srMessage);
+            } ));
         }
 
         private void writeFileWithStreamWriter_no_auto_flush()
@@ -158,7 +219,8 @@ namespace Lecture_3___Part_2___WPF
             swWrite.Flush();
             swWrite.Close();
             swTimer.Stop();
-            lstBoxStatiscs.Items.Insert(0, "writeFileWithStreamWriter_no_auto_flush took : " + swTimer.ElapsedMilliseconds.ToString("N0") + " ms");
+
+            updateListBox("writeFileWithStreamWriter_no_auto_flush took : " + swTimer.ElapsedMilliseconds.ToString("N0") + " ms", 0);
         }
 
         private void writeFileWithStreamWriter_auto_flush()
@@ -176,7 +238,8 @@ namespace Lecture_3___Part_2___WPF
             swWrite.Flush();
             swWrite.Close();
             swTimer.Stop();
-            lstBoxStatiscs.Items.Insert(0, "writeFileWithStreamWriter_auto_flush took : " + swTimer.ElapsedMilliseconds.ToString("N0") + " ms");
+
+            updateListBox("writeFileWithStreamWriter_auto_flush took : " + swTimer.ElapsedMilliseconds.ToString("N0") + " ms", 0);
         }
 
         private void writeStringBuilder()
@@ -192,7 +255,8 @@ namespace Lecture_3___Part_2___WPF
             }
             File.WriteAllText(srNameofFile, srWritings.ToString());
             swTimer.Stop();
-            lstBoxStatiscs.Items.Insert(0, "writeStringBuilder took : " + swTimer.ElapsedMilliseconds.ToString("N0") + " ms");
+
+            updateListBox("writeStringBuilder took : " + swTimer.ElapsedMilliseconds.ToString("N0") + " ms", 0);
         }
     }
 }
