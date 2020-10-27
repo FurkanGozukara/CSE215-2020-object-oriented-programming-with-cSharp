@@ -1,0 +1,14 @@
+﻿<Window x:Class="Lecture_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lecture_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="value type memory test" HorizontalAlignment="Left" Margin="43,35,0,0" VerticalAlignment="Top" Height="54" Width="193" Click="Button_Click"/>
+        <Button Content="reference type memory test" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Height="54" Width="198" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
