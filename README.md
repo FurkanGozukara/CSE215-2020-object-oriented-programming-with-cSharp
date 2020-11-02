@@ -2,6 +2,8 @@
 
 Object Oriented Programming Course with C#, Toros University, 2020
 
+Discord Channel of the Course for every kind of questions and answers : https://discord.gg/6Mrb8MwteQ
+
 This repository is dedicated to the Object Oriented Programming With C# Course 2019 Toros University, Computer and Software Engineering Department
 
 The course code is CSE215
