@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WHuSuP7mGbccMqGXkHNK0OeRlV9tX1pXu3Y178L7YybHNAI8HXhvM9GfmBYOQGng1d8mlkp+f4K/h+iRNmQb3Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Furkan Gözükara\\Desktop\\CSE215-2020-object-oriented-programming-with-cSharp\\source codes\\lecture 6\\lecture 6\\lecture 6.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Furkan Gözükara\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
