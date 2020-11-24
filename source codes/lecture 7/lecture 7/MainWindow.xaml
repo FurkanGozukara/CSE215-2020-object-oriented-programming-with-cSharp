@@ -1,0 +1,21 @@
+﻿<Window x:Class="lecture_7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lecture_7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Name="btnGenerateTextFile" Content="generate big text file" HorizontalAlignment="Left" Margin="42,23,0,0" VerticalAlignment="Top" Height="69" Width="233" Click="btnGenerateTextFile_Click"/>
+        <Button x:Name="btnFirstTimeCallStatic" Content="first time call static class / object for init" HorizontalAlignment="Left" Margin="299,23,0,0" VerticalAlignment="Top" Height="69" Width="233" Click="btnFirstTimeCallStatic_Click" />
+        <Button x:Name="btnCallStaticClassMethod" Content="first time call static method" HorizontalAlignment="Left" Margin="299,115,0,0" VerticalAlignment="Top" Height="69" Width="233" Click="btnCallStaticClassMethod_Click"  />
+        <Button x:Name="btnNonStaticClassExample" Content="non static class objects example" HorizontalAlignment="Left" Margin="299,217,0,0" VerticalAlignment="Top" Height="69" Width="233" Click="btnNonStaticClassExample_Click"  />
+        <Button x:Name="btnCallGarbageCollector" Content="call garbage collector" HorizontalAlignment="Left" Margin="629,23,0,0" VerticalAlignment="Top" Height="58" Width="143" Click="btnCallGarbageCollector_Click" />
+        <Button x:Name="btnRemoveList" Content="remove list from memory" HorizontalAlignment="Left" Margin="629,126,0,0" VerticalAlignment="Top" Width="143" Height="42" Click="btnRemoveList_Click"/>
+        <ListBox Name="lstResults" Margin="300,303,117,10"/>
+        <Label Name="lblInvoke" Content="invoke" HorizontalAlignment="Left" Margin="10,132,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.495,-0.206" Height="30" Width="265"/>
+        <Button Name="btnInvoke" Content="invoke method" HorizontalAlignment="Left" Margin="44,182,0,0" VerticalAlignment="Top" Height="48" Width="98" Click="btnInvoke_Click"/>
+        <Button x:Name="btnBeginInvoke" Content="begin invoke method" HorizontalAlignment="Left" Margin="44,257,0,0" VerticalAlignment="Top" Height="48" Width="142" Click="btnBeginInvoke_Click"/>
+    </Grid>
+</Window>
