@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>lecture_8</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="exampleDLL">
+      <HintPath>externalDLLs\exampleDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="WPF_DLL_Example">
+      <HintPath>externalDLLs\WPF_DLL_Example.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

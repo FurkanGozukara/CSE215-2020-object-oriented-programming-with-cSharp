@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "WPF_DLL_Example/1.0.0": {
+        "runtime": {
+          "WPF_DLL_Example.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPF_DLL_Example/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

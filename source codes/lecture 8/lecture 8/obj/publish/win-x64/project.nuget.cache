@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "N8bF04qiGe8GSmDCNcah+aNtV+eCwLMcuVDFKmyjbW5abNNCUkXJGAxVb+TEVaO/L0YxicbJy9PG1M6WMTibIg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Furkan Gözükara\\Desktop\\CSE215-2020-object-oriented-programming-with-cSharp\\source codes\\lecture 8\\lecture 8\\lecture 8.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Furkan Gözükara\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\3.1.8\\microsoft.netcore.app.runtime.win-x64.3.1.8.nupkg.sha512",
+    "C:\\Users\\Furkan Gözükara\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\3.1.8\\microsoft.windowsdesktop.app.runtime.win-x64.3.1.8.nupkg.sha512",
+    "C:\\Users\\Furkan Gözükara\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\3.1.8\\microsoft.aspnetcore.app.runtime.win-x64.3.1.8.nupkg.sha512"
+  ],
+  "logs": []
+}
