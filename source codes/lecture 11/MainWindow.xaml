@@ -1,0 +1,19 @@
+﻿<Window x:Class="lecture_11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lecture_11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="469" Width="1131">
+    <Grid>
+        <Button  Name="btnEnumerators" Content="Ienumerator and Ienumerable example" HorizontalAlignment="Left" Margin="29,23,0,0" VerticalAlignment="Top" Height="79" Width="351" Click="btnEnumerators_Click"/>
+        <ListBox x:Name="screenList" Margin="29,188,29,10"/>
+        <Button x:Name="btnRegulerException" Content="reguler main thread exception" HorizontalAlignment="Left" Margin="400,23,0,0" VerticalAlignment="Top" Height="79" Width="175" Click="btnRegulerException_Click"/>
+        <Button x:Name="btnTaskException" Content="task exception" HorizontalAlignment="Left" Margin="580,23,0,0" VerticalAlignment="Top" Height="79" Width="175" Click="btnTaskException_Click"/>
+        <Button x:Name="btnSubThreadException" Content="sub thread exception" HorizontalAlignment="Left" Margin="769,23,0,0" VerticalAlignment="Top" Height="79" Width="175"  Click="btnSubThreadException_Click"/>
+        <Button x:Name="btnDispatcherErrorCheck" Content="dispatcher error" HorizontalAlignment="Left" Margin="949,23,0,0" VerticalAlignment="Top" Height="79" Width="175" Click="btnDispatcherErrorCheck_Click"/>
+        <Button  x:Name="btnStackExample" Content="stack class example" HorizontalAlignment="Left" Margin="29,104,0,0" VerticalAlignment="Top" Height="79" Width="351" Click="btnStackExample_Click"/>
+
+    </Grid>
+</Window>

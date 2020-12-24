@@ -1,0 +1,19 @@
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\bin\Debug\netcoreapp3.1\lecture 11.exe
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\bin\Debug\netcoreapp3.1\lecture 11.deps.json
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\bin\Debug\netcoreapp3.1\lecture 11.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\bin\Debug\netcoreapp3.1\lecture 11.runtimeconfig.dev.json
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\bin\Debug\netcoreapp3.1\lecture 11.dll
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\bin\Debug\netcoreapp3.1\lecture 11.pdb
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\obj\Debug\netcoreapp3.1\lecture 11.csprojAssemblyReference.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\obj\Debug\netcoreapp3.1\lecture 11_MarkupCompile.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\obj\Debug\netcoreapp3.1\lecture 11_MarkupCompile.lref
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\obj\Debug\netcoreapp3.1\lecture 11.g.resources
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\obj\Debug\netcoreapp3.1\lecture 11.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\obj\Debug\netcoreapp3.1\lecture 11.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\obj\Debug\netcoreapp3.1\lecture 11.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\obj\Debug\netcoreapp3.1\lecture 11.dll
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\obj\Debug\netcoreapp3.1\lecture 11.pdb
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 11\obj\Debug\netcoreapp3.1\lecture 11.genruntimeconfig.cache
