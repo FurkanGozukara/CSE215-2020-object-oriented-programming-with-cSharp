@@ -1,0 +1,13 @@
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 12 console\bin\Debug\netcoreapp3.1\lecture 12 console.exe
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 12 console\bin\Debug\netcoreapp3.1\lecture 12 console.deps.json
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 12 console\bin\Debug\netcoreapp3.1\lecture 12 console.runtimeconfig.json
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 12 console\bin\Debug\netcoreapp3.1\lecture 12 console.runtimeconfig.dev.json
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 12 console\bin\Debug\netcoreapp3.1\lecture 12 console.dll
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 12 console\bin\Debug\netcoreapp3.1\lecture 12 console.pdb
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 12 console\obj\Debug\netcoreapp3.1\lecture 12 console.csprojAssemblyReference.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 12 console\obj\Debug\netcoreapp3.1\lecture 12 console.AssemblyInfoInputs.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 12 console\obj\Debug\netcoreapp3.1\lecture 12 console.AssemblyInfo.cs
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 12 console\obj\Debug\netcoreapp3.1\lecture 12 console.csproj.CoreCompileInputs.cache
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 12 console\obj\Debug\netcoreapp3.1\lecture 12 console.dll
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 12 console\obj\Debug\netcoreapp3.1\lecture 12 console.pdb
+C:\Users\Furkan Gözükara\Desktop\CSE215-2020-object-oriented-programming-with-cSharp\source codes\lecture 12 console\obj\Debug\netcoreapp3.1\lecture 12 console.genruntimeconfig.cache

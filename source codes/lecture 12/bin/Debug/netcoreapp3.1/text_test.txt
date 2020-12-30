@@ -1,0 +1,20 @@
+** In lecture 11 we have shown the followings:
+
+* What are IEnumerable and IEnumerator interfaces
+* How to use IEnumerable and IEnumerator interfaces to genereate iteratable non-generic classes
+* What are yield return and yield break
+* How to use yield return and yield break
+* How to override object.ToString generic method extension
+* What is ArrayList and how to use ArrayList
+* How to use Debug.WriteLine
+* How to compose constructor for main application start inside App.xaml.cs
+* How to use AppDomain.UnhandledExceptionEventHandler, Application.DispatcherUnhandledExceptionEventHandler and TaskScheduler.UnobservedTaskException to capture all of the unhandled exceptions application wide
+* What is Stack (last in first out)
+* What is StackTrace and how to log it 
+* How to log InnerException
+* How to log Exception
+* What is Delagate in c# and how to use Delagates
+* How to do multi casting of Delagates
+* What is Action and Anonymous method in c#
+* How to use Action Delagates and how to write anonymous methods
+* Inline Delegate Func usage
