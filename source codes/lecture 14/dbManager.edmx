@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="WebCrawlerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblMainUrls">
+          <Key>
+            <PropertyRef Name="UrlHash" />
+          </Key>
+          <Property Name="UrlHash" Type="char" MaxLength="64" Nullable="false" />
+          <Property Name="Url" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="DiscoverDate" Type="datetime" Nullable="false" />
+          <Property Name="LinkDepthLevel" Type="smallint" Nullable="false" />
+          <Property Name="ParentUrlHash" Type="char" MaxLength="64" Nullable="false" />
+          <Property Name="LastCrawlingDate" Type="datetime" Nullable="false" />
+          <Property Name="SourceCode" Type="varchar(max)" />
+          <Property Name="FetchTimeMS" Type="int" Nullable="false" />
+          <Property Name="PageTile" Type="nvarchar(max)" />
+          <Property Name="CompressionPercent" Type="tinyint" Nullable="false" />
+          <Property Name="IsCrawled" Type="bit" Nullable="false" />
+          <Property Name="HostUrl" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="CrawlTryCounter" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="WebCrawlerModelStoreContainer">
+          <EntitySet Name="tblMainUrls" EntityType="Self.tblMainUrls" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WebCrawlerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblMainUrl">
+          <Key>
+            <PropertyRef Name="UrlHash" />
+          </Key>
+          <Property Name="UrlHash" Type="String" MaxLength="64" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Url" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DiscoverDate" Type="DateTime" Nullable="false" Precision="3" annotation:StoreGeneratedPattern="None" />
+          <Property Name="LinkDepthLevel" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="LastCrawlingDate" Type="DateTime" Precision="3" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="SourceCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ParentUrlHash" Type="String" Nullable="false" MaxLength="64" FixedLength="true" Unicode="false" />
+          <Property Name="FetchTimeMS" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="None" DefaultValue="0" />
+          <Property Name="PageTile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CompressionPercent" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="None" DefaultValue="100" />
+          <Property Name="IsCrawled" Type="Boolean" Nullable="false" />
+          <Property Name="HostUrl" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="CrawlTryCounter" Type="Byte" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="DBCrawling" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblMainUrls" EntityType="Self.tblMainUrl" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WebCrawlerModelStoreContainer" CdmEntityContainer="DBCrawling">
+          <EntitySetMapping Name="tblMainUrls">
+            <EntityTypeMapping TypeName="WebCrawlerModel.tblMainUrl">
+              <MappingFragment StoreEntitySet="tblMainUrls">
+                <ScalarProperty Name="CrawlTryCounter" ColumnName="CrawlTryCounter" />
+                <ScalarProperty Name="HostUrl" ColumnName="HostUrl" />
+                <ScalarProperty Name="IsCrawled" ColumnName="IsCrawled" />
+                <ScalarProperty Name="CompressionPercent" ColumnName="CompressionPercent" />
+                <ScalarProperty Name="PageTile" ColumnName="PageTile" />
+                <ScalarProperty Name="FetchTimeMS" ColumnName="FetchTimeMS" />
+                <ScalarProperty Name="ParentUrlHash" ColumnName="ParentUrlHash" />
+                <ScalarProperty Name="UrlHash" ColumnName="UrlHash" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="DiscoverDate" ColumnName="DiscoverDate" />
+                <ScalarProperty Name="LinkDepthLevel" ColumnName="LinkDepthLevel" />
+                <ScalarProperty Name="LastCrawlingDate" ColumnName="LastCrawlingDate" />
+                <ScalarProperty Name="SourceCode" ColumnName="SourceCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

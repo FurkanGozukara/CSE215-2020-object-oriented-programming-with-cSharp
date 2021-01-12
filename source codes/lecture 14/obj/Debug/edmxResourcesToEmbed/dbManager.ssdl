@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebCrawlerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblMainUrls">
+    <Key>
+      <PropertyRef Name="UrlHash" />
+    </Key>
+    <Property Name="UrlHash" Type="char" MaxLength="64" Nullable="false" />
+    <Property Name="Url" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="DiscoverDate" Type="datetime" Nullable="false" />
+    <Property Name="LinkDepthLevel" Type="smallint" Nullable="false" />
+    <Property Name="ParentUrlHash" Type="char" MaxLength="64" Nullable="false" />
+    <Property Name="LastCrawlingDate" Type="datetime" Nullable="false" />
+    <Property Name="SourceCode" Type="varchar(max)" />
+    <Property Name="FetchTimeMS" Type="int" Nullable="false" />
+    <Property Name="PageTile" Type="nvarchar(max)" />
+    <Property Name="CompressionPercent" Type="tinyint" Nullable="false" />
+    <Property Name="IsCrawled" Type="bit" Nullable="false" />
+    <Property Name="HostUrl" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="CrawlTryCounter" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="WebCrawlerModelStoreContainer">
+    <EntitySet Name="tblMainUrls" EntityType="Self.tblMainUrls" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

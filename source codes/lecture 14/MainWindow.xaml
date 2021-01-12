@@ -1,0 +1,22 @@
+﻿<Window x:Class="lecture_13.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lecture_13"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtInputUrl" HorizontalAlignment="Left" Height="23" Margin="26,26,0,0" TextWrapping="Wrap" Text="enter root url" VerticalAlignment="Top" Width="428"/>
+        <Button Content="start intial crawling" HorizontalAlignment="Left" Margin="472,26,0,0" VerticalAlignment="Top" Width="130" Height="23" Click="clearDBandStart"/>
+        <ListBox  ScrollViewer.HorizontalScrollBarVisibility="Disabled"  x:Name="listBoxResults" Margin="26,60,31.6,10">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Content="test db" Name="btnTest" HorizontalAlignment="Left" Margin="636,26,0,0" VerticalAlignment="Top" Width="97" Height="23" Click="btnTest_Click"/>
+
+    </Grid>
+</Window>
